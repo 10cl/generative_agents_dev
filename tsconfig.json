@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "strict": false,
+    "esModuleInterop": true // webpack.config.ts
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

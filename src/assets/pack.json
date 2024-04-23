@@ -1,0 +1,112 @@
+{
+  "preload": {
+    "files": [
+      {
+        "type": "bitmapFont",
+        "key": "pixelop",
+        "textureURL": "./assets/font/pixelop.png",
+        "fontDataURL": "./assets/font/pixelop.fnt"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "GenerativeAgentsDevMap",
+        "url": "./assets/maps/generative_agents_main.json"
+      },
+      {
+        "type": "image",
+        "key": "blocks_1",
+        "url": "./assets/images/blocks_1.png"
+      },
+      {
+        "type": "image",
+        "key": "blocks_2",
+        "url": "./assets/images/blocks_2.png"
+      },
+      {
+        "type": "image",
+        "key": "blocks_3",
+        "url": "./assets/images/blocks_3.png"
+      },
+      {
+        "type": "image",
+        "key": "walls",
+        "url": "./assets/tiles/Room_Builder_32x32.png"
+      },
+      {
+        "type": "image",
+        "key": "interiors_pt1",
+        "url": "./assets/tiles/interiors_pt1.png"
+      },
+      {
+        "type": "image",
+        "key": "interiors_pt2",
+        "url": "./assets/tiles/interiors_pt2.png"
+      },
+      {
+        "type": "image",
+        "key": "interiors_pt3",
+        "url": "./assets/tiles/interiors_pt3.png"
+      },
+      {
+        "type": "image",
+        "key": "interiors_pt4",
+        "url": "./assets/tiles/interiors_pt4.png"
+      },
+      {
+        "type": "image",
+        "key": "interiors_pt5",
+        "url": "./assets/tiles/interiors_pt5.png"
+      },
+      {
+        "type": "image",
+        "key": "CuteRPG_Field_B",
+        "url": "./assets/tiles/CuteRPG_Field_B.png"
+      },
+      {
+        "type": "image",
+        "key": "CuteRPG_Field_C",
+        "url": "./assets/tiles/CuteRPG_Field_C.png"
+      },
+      {
+        "type": "image",
+        "key": "CuteRPG_Harbor_C",
+        "url": "./assets/tiles/CuteRPG_Harbor_C.png"
+      },
+      {
+        "type": "image",
+        "key": "CuteRPG_Village_B",
+        "url": "./assets/tiles/CuteRPG_Village_B.png"
+      },
+      {
+        "type": "image",
+        "key": "CuteRPG_Forest_B",
+        "url": "./assets/tiles/CuteRPG_Forest_B.png"
+      },
+      {
+        "type": "image",
+        "key": "CuteRPG_Desert_C",
+        "url": "./assets/tiles/CuteRPG_Desert_C.png"
+      },
+      {
+        "type": "image",
+        "key": "CuteRPG_Mountains_B",
+        "url": "./assets/tiles/CuteRPG_Mountains_B.png"
+      },
+      {
+        "type": "image",
+        "key": "CuteRPG_Desert_B",
+        "url": "./assets/tiles/CuteRPG_Desert_B.png"
+      },
+      {
+        "type": "image",
+        "key": "CuteRPG_Forest_C",
+        "url": "./assets/tiles/CuteRPG_Forest_C.png"
+      },
+      {
+        "type": "image",
+        "key": "space_fence_line",
+        "url": "./assets/images/space-fence-line.png"
+      }
+    ]
+  }
+}

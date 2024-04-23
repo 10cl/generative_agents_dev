@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="10cl" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <style>
+    body {
+      overflow: hidden;
+      margin: 0px;
+    }
+    html,
+    body,
+    #game-container {
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 10px;
+    }
+
+    body {
+      position: relative;
+      font-family: 'Inconsolata', monospace;
+      font-size: 1.7rem;
+      line-height: 1.5;
+      background-color: var(--color-background);
+    }
+    #loading {
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      /*z-index: 101;*/
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #loading-wrapper {
+      position: relative;
+      /*top: -50%;*/
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #loading-wrapper img {
+      /*height: 82px;*/
+      margin-bottom: 27px;
+      /*background-color: gray;*/
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <div id="loading">
+      <div id="loading-wrapper">
+        <img src="./assets/images/loading.png" alt="">
+        <span>Loading...</span>
+      </div>
+    </div>
+    <div id="game-container"></div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+{
+  "name": "generative_agents_dev",
+  "version": "0.0.1",
+  "description": "Interactive Simulacra of Human Behavior With Player.",
+  "keywords": [],
+  "scripts": {
+    "build-dev": "webpack --mode development",
+    "build-prod": "webpack --mode production",
+    "serve-dev": "webpack --mode development && webpack serve --mode development"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@types/node": "20.11.25",
+    "@types/webpack": "5.28.5",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.4.1",
+    "css-loader": "^0.28.0",
+    "expose-loader": "5.0.0",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "5.6.0",
+    "raw-loader": "^3.1.0",
+    "terser-webpack-plugin": "^2.2.1",
+    "ts-loader": "9.5.1",
+    "ts-node": "10.9.2",
+    "typescript": "5.4.2",
+    "webpack": "5.90.3",
+    "webpack-cli": "5.1.4",
+    "webpack-dev-server": "5.0.2",
+    "@babel/preset-env": "^7.7.1",
+    "@types/jest": "^26.0.23",
+    "axios": "^1.4.0",
+    "babel-jest": "^27.0.2",
+    "blueimp-md5": "^2.19.0",
+    "chatgpt": "^5.2.5",
+    "dayjs": "^1.11.9",
+    "dexie": "^3.2.4",
+    "dexie-react-hooks": "^1.1.6",
+    "eslint": "^7.29.0",
+    "jest": "^27.0.4",
+    "js-base64": "^3.7.5",
+    "pako": "^2.1.0",
+    "phaser3-rex-plugins": "^1.60.0",
+    "store": "^2.0.12",
+    "store2": "^2.14.2",
+    "ts-jest": "^27.0.3",
+    "webpack-merge": "^4.2.2",
+    "@babel/standalone": "^7.18.13",
+    "eval5": "^1.4.7"
+  },
+  "dependencies": {
+    "pako": "^2.1.0",
+    "phaser": "3.80.1",
+    "phaser-navmesh": "^2.3.1",
+    "phaser3-rex-plugins": "^1.80.1",
+    "core-js": "3",
+    "javascript-astar": "github:mikewesthad/javascript-astar",
+    "js-yaml": "^4.1.0",
+    "navmesh": "^2.3.1",
+    "phaser-matter-collision-plugin": "^1.0.0",
+    "uuid": "^9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/10cl/generative_agents_dev.git"
+  },
+  "author": {
+    "name": "10cl",
+    "email": "notice@toscl.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/10cl/generative_agents_dev/issues"
+  },
+  "homepage": "https://github.com/10cl/generative_agents_dev#readme"
+}
