@@ -243,7 +243,9 @@ export class Player extends Phaser.GameObjects.Sprite implements PlayerGlobal{
 
   public speak(message: string, typing=true) {
     const delayTime = 1000 - (new Date().getTime() - this.lastSpeakTime)
-
+    if (message.length < 14){
+      message += "          "
+    }
     if (!typing && this.bubbleBox && this.bubbleBox.isTyping){
       clearTimeout(this.bubbleDestroyTimeout)
       this.bubbleDestroyTimeout = setTimeout(function (){

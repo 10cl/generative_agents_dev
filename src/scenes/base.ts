@@ -1,6 +1,6 @@
 import Phaser from "phaser";
 import Utils from "../helpers/utils";
-import Maze, {TIELD_WIDTH} from "../objects/maze";
+import Maze, {NPC_PREDEFINED, TIELD_WIDTH} from "../objects/maze";
 import {
   getPromptFlowNode,
   getPendingMessage,
@@ -10,7 +10,7 @@ import {
   isGameWindow,
   isHookedResponse,
   setPendingMessage,
-  setStore, setStep, setResponseStream, getTaskNodeValue, setTaskNodeValue, getTask, getMouseNotInGame,
+  setStore, setStep, setResponseStream, getTaskNodeValue, setTaskNodeValue, getTask, getMouseNotInGame, getRealYamlKey,
 } from "../helpers/memory-store";
 import { DevScene } from "./dev";
 import { loadLongMemory } from "../helpers/memory";
@@ -154,10 +154,6 @@ export class BaseScene extends DevScene {
     this.player.setNearNpcs(near_npc);
 
     if (gameMode) {
-      if (isHookedResponse("reset")) {
-        this.player.destroyBubble();
-        this.utils.deactivateButton(this);
-      }
       let player_position = this.player.getPosition();
       if (player_pending_text !== "") {
         setPendingMessage("");
@@ -170,7 +166,13 @@ export class BaseScene extends DevScene {
             promptNode = this.promptNode;
           }
           this.input_time = new Date();
-          const speaker = (promptNode && promptNode.role && promptNode.role.npc) ? this.personas[promptNode.role.npc] : this.player;
+          let speaker;
+          const yamlKeySpeaker = getRealYamlKey().replace("Profile_", "").replace("_", " ");
+          if(Object.keys(NPC_PREDEFINED).indexOf(yamlKeySpeaker) != -1){
+            speaker = this.personas[yamlKeySpeaker]
+          }else{
+            speaker = (promptNode && promptNode.role && promptNode.role.npc) ? this.personas[promptNode.role.npc] : this.player;
+          }
           speaker.speak(response_update_text, false);
           this.promptNode = promptNode;
 
@@ -193,6 +195,7 @@ export class BaseScene extends DevScene {
             }
           } else {
             if (tmp_short_distance > 200) {
+              this.cameras.main.startFollow(this.player, true);
               this.utils.deactivateButton(this);
               this.player.destroyBubble();
               this.player.getChatNpc().setChatWithPlayer(false);
