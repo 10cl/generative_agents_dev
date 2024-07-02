@@ -1,5 +1,5 @@
-import {PromptFlowNode} from "../interfaces/promptflowx.types";
 import {Player} from "../objects/player";
+import {PromptFlowNode} from "promptflowx";
 
 interface DevInfo {
   prompts?: any;

@@ -58,7 +58,8 @@
     "js-yaml": "^4.1.0",
     "navmesh": "^2.3.1",
     "phaser-matter-collision-plugin": "^1.0.0",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "promptflowx": "^0.1.3"
   },
   "repository": {
     "type": "git",

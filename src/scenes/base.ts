@@ -16,7 +16,7 @@ import { DevScene } from "./dev";
 import { loadLongMemory } from "../helpers/memory";
 import {Npc} from "../objects/npc";
 import {MusicButton} from "../objects/UIButton";
-import {PromptFlowNode} from "../interfaces/promptflowx.types";
+import {PromptFlowNode} from "promptflowx";
 import {createTextSign, updatePointerPosition} from "../helpers/pointer";
 
 export class BaseScene extends DevScene {
